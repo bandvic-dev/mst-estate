@@ -1,0 +1,117 @@
+.header {
+    background: transparent;
+    padding: 34px 0;
+    width: 100%;
+    position: relative;
+    top: 0;
+    transition: all 0.5s ease;
+}
+
+.header.sticky {
+    background: var(--gray-dark);
+    position: fixed;
+    padding: 10px 0;
+}
+
+.header-row {
+    display: flex;
+    align-items: center;
+}
+
+.header-logo {
+    font-family: 'Prata-Regular', sans-serif;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 54px;
+    letter-spacing: 1px;
+    color: var(--white);
+    z-index: 1000;
+}
+
+.header-menu {
+    margin-left: 194px;
+}
+
+.header-menu-list {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+.header-menu__item {
+    padding: 0 15px;
+}
+
+.header-menu__link {
+    font-style: italic;
+    font-family: 'Arial', sans-serif;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+    color: var(--white);
+}
+
+@media (min-width: 945px) {
+    .header-menu-mobile-button {
+        display: none;
+    }
+}
+
+@media (max-width: 945px) {
+    .header-row {
+        justify-content: space-between;
+    }
+
+    .header-menu-mobile {
+        display: none;
+    }
+
+    .header-menu-mobile--show {
+        background: var(--gray-dark);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 100px 20px;
+        margin: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        position: fixed;
+        top: 0;
+        left: 0;
+    }
+
+    .header-menu-list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+    }
+
+    .header-menu-mobile-button {
+        background: transparent;
+        border: 1px solid var(--white);
+        border-radius: 5px;
+        padding: 0 6px;
+        display: block;
+        width: 50px;
+        height: 50px; 
+        z-index: 1000;
+    }
+
+    .header-menu-mobile-button span {
+        background: var(--white);
+        border-radius: 2px;
+        display: block;
+        margin: 8px 0;
+        width: 100%;
+        height: 4px;
+    }
+}
+
