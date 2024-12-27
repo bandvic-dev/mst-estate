@@ -1,5 +1,5 @@
 .hero {
-    background: var(--gray-dark);
+    background: var(--black);
     position: relative;
     overflow: hidden;
 }

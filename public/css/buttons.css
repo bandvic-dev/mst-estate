@@ -12,4 +12,63 @@
     text-decoration: none;
     text-transform: uppercase;
     border-radius: 4px;
+    cursor: pointer;
 }
+
+.secondary-button {
+    font-family: 'Arial', sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 100px;
+    display: inline-flex;
+    text-align: center;
+    justify-content: center;
+    background: var(--gray-dark);
+    color: var(--white);
+    min-width: 190px;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.checkbox {
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+    font-size: 16px;
+    user-select: none;
+}
+
+.checkbox input {
+    display: none;
+}
+  
+.checkbox .checkmark {
+    width: 24px;
+    height: 24px;
+    border: 2px solid #405D65;
+    border-radius: 4px;
+    margin-right: 8px;
+    position: relative;
+    background-color: white;
+    transition: all 0.3s ease;
+}
+  
+.checkbox input:checked + .checkmark {
+    background-color: var(--gray-dark);
+    border-color: var(--gray-dark);
+}
+  
+.checkbox input:checked + .checkmark::after {
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: 6px;
+    width: 6px;
+    height: 12px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+}
+

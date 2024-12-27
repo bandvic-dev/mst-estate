@@ -1,0 +1,116 @@
+.order {
+    background: var(--gray-dark);
+    padding: 100px 20px;
+}
+
+.order-container {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    background: var(--white);
+    border-radius: 30px;
+    max-width: 1600px;
+    padding: 0;
+    position: relative;
+}
+
+.order-form {
+    display: flex;
+    flex-direction: column;
+    padding: 70px 0 70px 115px;
+    max-width: 896px;
+    width: 100%;
+    flex: 1;
+}
+
+.order-form__title {
+    font-family: 'Prata-Regular', sans-serif;
+    font-size: 54px;
+    font-weight: 400;
+    line-height: 60px;
+    color: #38535D;
+    margin-bottom: 30px;
+}
+
+.order-form__label {
+    width: 100%;
+    margin-top: 13px;
+    color: var(--gray-darken);
+}
+
+.order-form__checkbox-label {
+    margin-top: 30px;
+    font-size: 19px;
+    color: var(--gray-darken);
+}
+
+.order-form__input {
+    border: 2px solid var(--gray-light);
+    border-radius: 4px;
+    padding: 16px 37px;
+    width: 100%;
+    font-size: 24px;
+}
+
+.order-form__input::placeholder {
+    color: var(--gray-darken);
+    opacity: 0.7;
+}
+  
+.order-form__input::-ms-input-placeholder {
+    color: var(--gray-darken);
+    opacity: 0.7;
+}
+
+.order-form__button {
+    margin-top: 26px;
+}
+
+.order__image {
+    position: absolute;
+    height: 685px;
+    overflow: hidden;
+    right: 164px;
+    bottom: 0;
+    width: 495px;
+}
+
+@media (max-width: 1650px) {
+    .order__image {
+        right: 0;
+    }
+}
+
+@media (max-width: 1340px) {
+    .order-form {
+        padding: 70px 0 70px 70px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .order-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .order-form {
+        padding: 70px 20px;
+    }
+
+    .order-form__title {
+        font-size: 40px;
+        line-height: 44px;
+    }
+
+    .order__image {
+        height: 81vw;
+        right: 0;
+    }
+
+    .order__image-bg {
+        width: 100%;
+    }
+    .order__image-person {
+        bottom: 0;
+    }
+}
