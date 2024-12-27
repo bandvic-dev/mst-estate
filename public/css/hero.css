@@ -9,12 +9,18 @@
     align-items: flex-end;
     justify-content: space-between;
     min-height: 1009px;
+    position: relative;
 }
 
 .hero-image {
     position: absolute;
     top: 0;
-    right: 0;
+    right: -140px;
+    max-width: 763px;
+}
+
+.hero-image img {
+    width: 100%;
 }
 
 .hero-content {
@@ -61,7 +67,7 @@
 
 .hero-content-list__item:before {
     content: '';
-    background-image: url('../images//svg//check.svg');
+    background-image: url('../images/svg/check.svg');
     background-size: cover;
     width: 39px;
     height: 37px;
@@ -85,5 +91,7 @@
 
     .hero-image {
         position: relative;
+        right: 0;
+        margin: 0 -20px;
     }
 }

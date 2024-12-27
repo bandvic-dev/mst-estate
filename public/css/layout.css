@@ -21,3 +21,8 @@ body.no-scroll {
 a {
     color: var(--white);
 }
+
+img {
+    display: block;
+}
+
