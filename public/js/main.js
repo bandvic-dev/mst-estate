@@ -43,4 +43,25 @@ document.addEventListener("DOMContentLoaded", () => {
             });
         });
     });
+
+    //Animation on scroll
+    function animateOnScroll() {
+        const options = {
+            threshold: 0.5,
+        };
+
+        const observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, options);
+
+        const elements = document.querySelectorAll('.animated');
+        elements.forEach(el => observer.observe(el));
+    }
+
+    animateOnScroll();
 });

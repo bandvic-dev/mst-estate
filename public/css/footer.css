@@ -127,4 +127,11 @@
         align-items: center;
         gap: 20px;
     }
+
+    .footer-copyright__text,
+    .footer__privacy-link,
+    .footer__terms-link {
+        font-size: 16px;
+        line-height: 24px;
+    }
 }

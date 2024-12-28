@@ -12,6 +12,10 @@ body.no-scroll {
     overflow: hidden;
 }
 
+.main {
+    overflow: hidden;
+}
+
 .container {
     max-width: 1650px;
     margin: 0 auto;
