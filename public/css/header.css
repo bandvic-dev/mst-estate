@@ -82,6 +82,10 @@
 }
 
 @media (max-width: 945px) {
+    .header {
+        padding: 20px 0;
+    }
+
     .header-logo {
         font-size: 24px;
         line-height: 32px;
