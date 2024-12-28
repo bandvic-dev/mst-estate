@@ -20,6 +20,12 @@ body.no-scroll {
 
 a {
     color: var(--white);
+    text-decoration: none;
+    transition: all .5s ease;
+}
+
+a:hover {
+    color: var(--beige);
 }
 
 img {
